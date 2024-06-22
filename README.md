@@ -5,7 +5,7 @@
 
 1. YOUTUBE LINK :: ==== 첨부필요 ====
 
-2. PPT SLIDES DOWNLOAD :: ==== 첨부필요 ====
+2. PPT SLIDES :: https://www.canva.com/design/DAGIjS6nIOM/jYzVElamiiu6_jKAc4c4dg/view?utm_content=DAGIjS6nIOM&utm_campaign=designshare&utm_medium=link&utm_source=editor
 
 3. DATASETS
 - DOWNLOAD :: https://drive.google.com/file/d/1s3YDJKxYaUa-Hg_Ek_4feq5ohTH9w_5W/view
