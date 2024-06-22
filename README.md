@@ -94,7 +94,7 @@ The drone operator sets the position to move the drone and selects the mode base
  - video3 : oblique view 
 
 Depending on the position and angle of the drone set, the opponent and our territorial waters are separated by red lines
-- Green bbox(Normal State) :: Not over our territorial waters + Direction of progress not towards territorial waters
+- Green bbox(Too Close) :: Not over our territorial waters + Direction of progress not towards territorial waters, but close enough to be watched
 - Yellow bbox(Approching) :: Direction of progress towards territorial waters
 - Red bbox(Crossed) :: Over our territorial waters
 - Blue line :: Predicted movement direction of the boat
