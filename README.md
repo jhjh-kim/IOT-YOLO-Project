@@ -96,7 +96,7 @@ Depending on the location and shooting angle, there are significant boundary lin
 - Blue line: Predicted movement direction of the boat
 
 
-# How To
+## USING SCIPRT FILES
 0. prepare your dataset and .yaml file.
 
 1. cd ~/yolov8
@@ -113,3 +113,19 @@ Depending on the location and shooting angle, there are significant boundary lin
 5. go to ~/yolov8/ultralytics/models/yolo/custom_train.py
    - adjust the training setting as you want.
    - execute the script file by "python custom_train.py"
+  
+
+## REFRENCES
+1. DATASETS
+- AERIAL 1&2 : https://universe.roboflow.com/public-1tecx/boat-detection-bzj6m/dataset/1 
+- TRACKING 1 : https://universe.roboflow.com/boats-hu0jt/boat-tracking-model/browse?queryText=&pageSize=50&startingIndex=0&browseQuery=true
+- TRACKING 2 : https://universe.roboflow.com/shipdataset3-3prli/shipdata-a4ucj/dataset/9
+
+  
+2. VIDEOS
+- Aerial 1
+- Side 1
+- Aerial 2 : https://youtu.be/u6uNECa_X8Q?si=11l7nUsRdM9geGmJ
+
+3. REFERENCE CODES
+https://docs.ultralytics.com/
