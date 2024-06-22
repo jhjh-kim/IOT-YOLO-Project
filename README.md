@@ -168,11 +168,5 @@ pip install deep_sort_realtime
 - Boat 1 : https://universe.roboflow.com/boats-hu0jt/boat-tracking-model/browse?queryText=&pageSize=50&startingIndex=0&browseQuery=true
 - Boat 2 : https://universe.roboflow.com/shipdataset3-3prli/shipdata-a4ucj/dataset/9
 
-  
-2. VIDEOS
-- video 1 : ==== 첨부필요 ====
-- video 2 : ==== 첨부필요 ====
-- video 3 : ==== 첨부필요 ====
-
-3. CODES
+2. YOLOv8 CODE
 - https://docs.ultralytics.com/
