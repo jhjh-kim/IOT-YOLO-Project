@@ -3,7 +3,7 @@
 
 ### :file_folder::file_folder:Archive:file_folder::file_folder:
 
-1. YOUTUBE LINK :: ==== 첨부필요 ====
+1. YOUTUBE LINK :: https://www.youtube.com/watch?v=rV0SuTybBZ0
 
 2. PPT SLIDES :: https://www.canva.com/design/DAGIjS6nIOM/jYzVElamiiu6_jKAc4c4dg/view?utm_content=DAGIjS6nIOM&utm_campaign=designshare&utm_medium=link&utm_source=editor
 
