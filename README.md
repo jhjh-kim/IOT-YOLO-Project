@@ -3,22 +3,21 @@
 
 ### Archive
 
-1. YOUTUBE LINK
+1. YOUTUBE LINK ::
 
-2. PPT SLIDES DOWNLOAD
+2. PPT SLIDES DOWNLOAD :: 
 
 3. DATASETS
+- DOWNLOAD :: https://drive.google.com/file/d/1s3YDJKxYaUa-Hg_Ek_4feq5ohTH9w_5W/view
 
-- DOWNLOAD :
 
-
-- ROBOFLOW :
+- ROBOFLOW ::
    - AERIAL 1&2 : https://universe.roboflow.com/public-1tecx/boat-detection-bzj6m/dataset/1 
    - TRACKING 1 : https://universe.roboflow.com/boats-hu0jt/boat-tracking-model/browse?queryText=&pageSize=50&startingIndex=0&browseQuery=true
    - TRACKING 2 : https://universe.roboflow.com/shipdataset3-3prli/shipdata-a4ucj/dataset/9
 
 5. VIDEOS
-DOWNLOAD : 
+DOWNLOAD :: https://drive.google.com/drive/folders/1ETkO5a3iNDmgbmBCXtDy2OGK1IWTmSWP
 
 
 ### PROJECT WORKFLOW
@@ -42,6 +41,7 @@ DOWNLOAD :
 
 
 ### 1. PROJECT TOPIC
+![l_2023051001000357700031231](https://github.com/jhjh-kim/IOT-YOLO-Project/assets/132179356/e7350e04-672d-438c-9567-25b5659501e5)
 #### Background
 Illegal fishing boats frequently appear along the Northern Limit Line (NLL), the maritime boundary between South Korea and North Korea. Given the issue of decreasing military personnel in South Korea, we have devised a solution to address this challenge: an unmanned drone system utilizing computer vision technology.
 
@@ -53,7 +53,7 @@ Implement the idea of using the YOLOv8 model to detect boats in the ocean and ch
 ### 2. Datasets
 - DATASET SELECTION : The dataset is composed of a total of three datasets: two publicly available datasets from ROBOFLOW and one dataset created by capturing images ourselves. When selecting the datasets, we considered various types of boats, sizes, and angles.
 
-- DATA PROCESSING : As will be mentioned later, to improve the model's performance, we added images that capture the phenomena when boats are in motion. Additionally, we added noise to the images and manually labeled and filtered out low-quality datasets.
+- DATA PROCESSING : To improve the model's performance, we added images that capture the phenomena when boats are in motion. Additionally, we added noise to the images and manually labeled and filtered out low-quality datasets.
 <img width="1012" alt="스크린샷 2024-06-22 오후 8 27 42" src="https://github.com/jhjh-kim/IOT-YOLO-Project/assets/132179356/738647db-17be-497b-9bf9-c8c5c8b147a0">
 
 
@@ -70,6 +70,7 @@ Additionally, when training on the demo dataset with four different loss functio
 ### 4. Comparing Model Performance by Loss Function
 When comparing the model performance with four different loss functions on the same demo dataset, we found that the BCE loss function performed the best. Therefore, we decided to use the BCE loss function for future training.
 
+* RESULT SCRIPT FILES : loss_tests
 
 
 ### 5. Using Transfer Learning
@@ -81,6 +82,7 @@ To reflect various types, sizes, and angles of boats, we conducted a total of fo
 
 
 ### 6. Final Model Performance
+![100aerial1_50boat_video_200joint_400joint](https://github.com/jhjh-kim/IOT-YOLO-Project/assets/132179356/c8120f6d-8333-4e91-85f6-c8b2db2b8b79)
 
 
 ### 7. Application
@@ -97,7 +99,18 @@ Depending on the location and shooting angle, there are significant boundary lin
 - Blue line: Predicted movement direction of the boat
 
 
+
 ## USING SCIPRT FILES
+
+### SCRIPT FILES EXPLANATION
+- loss_tests :: Training results metrics for each of the four loss functions
+- model_size_test :: Training results metrics for YOLOv8m and YOLOv8s on the aerial1 dataset
+- ship_detector :: Model and Implementation Code for the Application
+- training_results :: Training results metrics for the total of four models up to the final model
+
+
+
+### Custom Training
 0. prepare your dataset and .yaml file.
 
 1. cd ~/yolov8
@@ -114,8 +127,27 @@ Depending on the location and shooting angle, there are significant boundary lin
 5. go to ~/yolov8/ultralytics/models/yolo/custom_train.py
    - adjust the training setting as you want.
    - execute the script file by "python custom_train.py"
-  
-## SCRIPT FILES EXPLANATION
+
+
+
+### Ship_Detector Executation
+0. Downlaod best_model.pt & ship_detector.py from 'ship_detector' Script Files
+
+1. Download Videos from Google Drive
+https://drive.google.com/drive/folders/1ETkO5a3iNDmgbmBCXtDy2OGK1IWTmSWP
+   
+2. Installing Libraries in the ship_detector File
+===================================
+pip install ultralytics
+pip install opencv-python
+pip install numpy
+pip install torch
+pip install deep_sort_realtime
+===================================
+
+3. Configuring Paths for the Model and Video
+
+4. Executing
 
 
 
@@ -127,9 +159,9 @@ Depending on the location and shooting angle, there are significant boundary lin
 
   
 2. VIDEOS
-- Aerial 1 :
-- Side 1 : 
-- Aerial 2 : https://youtu.be/u6uNECa_X8Q?si=11l7nUsRdM9geGmJ
+- video 1 :
+- video 2 : 
+- video 3 : https://youtu.be/u6uNECa_X8Q?si=11l7nUsRdM9geGmJ
 
 3. CODES
-https://docs.ultralytics.com/
+- https://docs.ultralytics.com/
