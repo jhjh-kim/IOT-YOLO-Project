@@ -3,18 +3,18 @@
 
 ### Archive
 
-1. YOUTUBE LINK ::
+1. YOUTUBE LINK :: =======수정필요=======
 
-2. PPT SLIDES DOWNLOAD :: 
+2. PPT SLIDES DOWNLOAD :: =======수정필요=======
 
 3. DATASETS
 - DOWNLOAD :: https://drive.google.com/file/d/1s3YDJKxYaUa-Hg_Ek_4feq5ohTH9w_5W/view
 
 
 - ROBOFLOW ::
-   - AERIAL 1&2 : https://universe.roboflow.com/public-1tecx/boat-detection-bzj6m/dataset/1 
-   - TRACKING 1 : https://universe.roboflow.com/boats-hu0jt/boat-tracking-model/browse?queryText=&pageSize=50&startingIndex=0&browseQuery=true
-   - TRACKING 2 : https://universe.roboflow.com/shipdataset3-3prli/shipdata-a4ucj/dataset/9
+   - Aerial 1&2 : https://universe.roboflow.com/public-1tecx/boat-detection-bzj6m/dataset/1 
+   - Boat 1 : https://universe.roboflow.com/boats-hu0jt/boat-tracking-model/browse?queryText=&pageSize=50&startingIndex=0&browseQuery=true
+   - Boat 2 : https://universe.roboflow.com/shipdataset3-3prli/shipdata-a4ucj/dataset/9
 
 5. VIDEOS
 DOWNLOAD :: https://drive.google.com/drive/folders/1ETkO5a3iNDmgbmBCXtDy2OGK1IWTmSWP
@@ -54,7 +54,8 @@ Implement the idea of using the YOLOv8 model to detect boats in the ocean and ch
 - DATASET SELECTION : The dataset is composed of a total of three datasets: two publicly available datasets from ROBOFLOW and one dataset created by capturing images ourselves. When selecting the datasets, we considered various types of boats, sizes, and angles.
 
 - DATA PROCESSING : To improve the model's performance, we added images that capture the phenomena when boats are in motion. Additionally, we added noise to the images and manually labeled and filtered out low-quality datasets.
-<img width="1012" alt="스크린샷 2024-06-22 오후 8 27 42" src="https://github.com/jhjh-kim/IOT-YOLO-Project/assets/132179356/738647db-17be-497b-9bf9-c8c5c8b147a0">
+<img width="1033" alt="스크린샷 2024-06-22 오후 8 31 31" src="https://github.com/jhjh-kim/IOT-YOLO-Project/assets/132179356/58ea858a-55fd-4abf-bb3a-9c8a5a603631">
+
 
 
 
@@ -87,9 +88,9 @@ To reflect various types, sizes, and angles of boats, we conducted a total of fo
 
 ### 7. Application
 The drone operator sets the position to move the drone and selects the mode based on either an aerial or side view.
- - video1 : aerial view + dynamic movements
- - video2 : side view + dynamic movements
- - video3 : aerial view + multiple boats
+ - video1 : aerial view + dynamic movements =======수정필요=======
+ - video2 : side view + dynamic movements =======수정필요=======
+ - video3 : aerial view + multiple boats =======수정필요=======
 
 
 Depending on the location and shooting angle, there are significant boundary lines. If a boat crosses these significant boundaries or its direction of travel points towards the boundary, the color of its bounding box changes.
@@ -153,15 +154,15 @@ pip install deep_sort_realtime
 
 ## REFRENCES
 1. DATASETS
-- AERIAL 1&2 : https://universe.roboflow.com/public-1tecx/boat-detection-bzj6m/dataset/1 
-- TRACKING 1 : https://universe.roboflow.com/boats-hu0jt/boat-tracking-model/browse?queryText=&pageSize=50&startingIndex=0&browseQuery=true
-- TRACKING 2 : https://universe.roboflow.com/shipdataset3-3prli/shipdata-a4ucj/dataset/9
+- Aerial 1&2 : https://universe.roboflow.com/public-1tecx/boat-detection-bzj6m/dataset/1 
+- Boat 1 : https://universe.roboflow.com/boats-hu0jt/boat-tracking-model/browse?queryText=&pageSize=50&startingIndex=0&browseQuery=true
+- Boat 2 : https://universe.roboflow.com/shipdataset3-3prli/shipdata-a4ucj/dataset/9
 
   
 2. VIDEOS
 - video 1 :
 - video 2 : 
-- video 3 : https://youtu.be/u6uNECa_X8Q?si=11l7nUsRdM9geGmJ
+- video 3 : 
 
 3. CODES
 - https://docs.ultralytics.com/
