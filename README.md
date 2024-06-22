@@ -1,7 +1,7 @@
 # IOT-YOLO-Project
-## Team10 : Boat Detection & Prediction System
+## :ocean::anchor::ocean::anchor:Team10 : Boat Detection & Prediction System:anchor::ocean::anchor::ocean:
 
-### Archive
+### :file_folder::file_folder:Archive:file_folder::file_folder:
 
 1. YOUTUBE LINK :: ==== 첨부필요 ====
 
@@ -24,7 +24,7 @@ DOWNLOAD :: https://drive.google.com/drive/folders/1ETkO5a3iNDmgbmBCXtDy2OGK1IWT
 
 <img width="696" alt="스크린샷 2024-06-22 오후 5 55 22" src="https://github.com/jhjh-kim/IOT-YOLO-Project/assets/132179356/d7307214-c0fe-487e-9aa6-6bc0a29e80b6">
 
-## PROJECT STEPS
+## :clipboard::clipboard:PROJECT STEPS:clipboard::clipboard:
 1. PROJECT TOPIC
 
 2. DATASETS
@@ -41,10 +41,9 @@ DOWNLOAD :: https://drive.google.com/drive/folders/1ETkO5a3iNDmgbmBCXtDy2OGK1IWT
 
 
 ### 1. PROJECT TOPIC
-![l_2023051001000357700031231](https://github.com/jhjh-kim/IOT-YOLO-Project/assets/132179356/e7350e04-672d-438c-9567-25b5659501e5)
 #### Background
 Illegal fishing boats frequently appear along the Northern Limit Line (NLL), the maritime boundary between South Korea and North Korea. Given the issue of decreasing military personnel in South Korea, we have devised a solution to address this challenge: an unmanned drone system utilizing computer vision technology.
-
+![l_2023051001000357700031231](https://github.com/jhjh-kim/IOT-YOLO-Project/assets/132179356/e7350e04-672d-438c-9567-25b5659501e5)
 #### Goal & Output
 Implement the idea of using the YOLOv8 model to detect boats in the ocean and change their status when they move towards or cross significant points like the NLL, utilizing Deep SORT, and provide this information in real-time.
 
@@ -102,7 +101,7 @@ Depending on the position and angle of the drone set, the opponent and our terri
 
 
 
-## USING SCIPRT FILES
+## :open_file_folder::open_file_folder:USING SCIPRT FILES:open_file_folder::open_file_folder:
 
 ### SCRIPT FILES EXPLANATION
 - loss_tests :: Training results metrics for each of the four loss functions
@@ -153,16 +152,21 @@ pip install deep_sort_realtime
 - video 1 ::
    - Right of the red line: Our territorial waters
    - Left of the red line: Foreign territorial waters
+<img width="349" alt="video1 sample" src="https://github.com/jhjh-kim/IOT-YOLO-Project/assets/132179356/76f99b56-45a2-4685-a1e9-16fd199c1228">
 
 - video 2 ::
   - Right of the red line: Foreign territorial waters
   - Left of the red line: Our territorial waters
+<img width="370" alt="video2 sample" src="https://github.com/jhjh-kim/IOT-YOLO-Project/assets/132179356/954b63c9-1a80-4c7c-988d-962d77de9a67">
 
 - video 3 :: 
    - Above of the red line: Our territorial waters
    - Below of the red line: Foreign territorial waters
+<img width="375" alt="video3 sample" src="https://github.com/jhjh-kim/IOT-YOLO-Project/assets/132179356/52436144-b966-45ff-b7d3-453a58d6f072">
 
-## REFRENCES
+
+
+## :page_facing_up::page_facing_up:REFRENCES:page_facing_up::page_facing_up:
 1. DATASETS
 - Aerial 1&2 : https://universe.roboflow.com/public-1tecx/boat-detection-bzj6m/dataset/1 
 - Boat 1 : https://universe.roboflow.com/boats-hu0jt/boat-tracking-model/browse?queryText=&pageSize=50&startingIndex=0&browseQuery=true
