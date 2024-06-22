@@ -54,6 +54,7 @@ Implement the idea of using the YOLOv8 model to detect boats in the ocean and ch
 - DATASET SELECTION : The dataset is composed of a total of three datasets: two publicly available datasets from ROBOFLOW and one dataset created by capturing images ourselves. When selecting the datasets, we considered various types of boats, sizes, and angles.
 
 - DATA PROCESSING : As will be mentioned later, to improve the model's performance, we added images that capture the phenomena when boats are in motion. Additionally, we added noise to the images and manually labeled and filtered out low-quality datasets.
+<img width="1012" alt="스크린샷 2024-06-22 오후 8 27 42" src="https://github.com/jhjh-kim/IOT-YOLO-Project/assets/132179356/738647db-17be-497b-9bf9-c8c5c8b147a0">
 
 
 
@@ -114,6 +115,9 @@ Depending on the location and shooting angle, there are significant boundary lin
    - adjust the training setting as you want.
    - execute the script file by "python custom_train.py"
   
+## SCRIPT FILES EXPLANATION
+
+
 
 ## REFRENCES
 1. DATASETS
@@ -123,9 +127,9 @@ Depending on the location and shooting angle, there are significant boundary lin
 
   
 2. VIDEOS
-- Aerial 1
-- Side 1
+- Aerial 1 :
+- Side 1 : 
 - Aerial 2 : https://youtu.be/u6uNECa_X8Q?si=11l7nUsRdM9geGmJ
 
-3. REFERENCE CODES
+3. CODES
 https://docs.ultralytics.com/
