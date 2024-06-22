@@ -3,9 +3,9 @@
 
 ### Archive
 
-1. YOUTUBE LINK :: =======수정필요=======
+1. YOUTUBE LINK :: ==== 첨부필요 ====
 
-2. PPT SLIDES DOWNLOAD :: =======수정필요=======
+2. PPT SLIDES DOWNLOAD :: ==== 첨부필요 ====
 
 3. DATASETS
 - DOWNLOAD :: https://drive.google.com/file/d/1s3YDJKxYaUa-Hg_Ek_4feq5ohTH9w_5W/view
@@ -68,17 +68,18 @@ Additionally, when training on the demo dataset with four different loss functio
 
 
 
+
 ### 4. Comparing Model Performance by Loss Function
+<img width="637" alt="스크린샷 2024-06-22 오후 9 16 56" src="https://github.com/jhjh-kim/IOT-YOLO-Project/assets/132179356/fbaa44ab-5c2a-497b-83d0-e4c8f26c5dc6">
+
 When comparing the model performance with four different loss functions on the same demo dataset, we found that the BCE loss function performed the best. Therefore, we decided to use the BCE loss function for future training.
 
-* RESULT SCRIPT FILES : loss_tests
 
 
 ### 5. Using Transfer Learning
+<img width="706" alt="model develop" src="https://github.com/jhjh-kim/IOT-YOLO-Project/assets/132179356/7bef0bd1-6986-4fe8-ab63-b417d07f0fe0">
+
 To reflect various types, sizes, and angles of boats, we conducted a total of four transfer learning stages using different datasets and parameters.
-
-
-<img width="698" alt="스크린샷 2024-06-22 오후 7 02 24" src="https://github.com/jhjh-kim/IOT-YOLO-Project/assets/132179356/94409487-fcdc-4b6f-979c-330513c48743">
 
 
 
@@ -86,18 +87,18 @@ To reflect various types, sizes, and angles of boats, we conducted a total of fo
 ![100aerial1_50boat_video_200joint_400joint](https://github.com/jhjh-kim/IOT-YOLO-Project/assets/132179356/c8120f6d-8333-4e91-85f6-c8b2db2b8b79)
 
 
+
 ### 7. Application
-The drone operator sets the position to move the drone and selects the mode based on either an aerial or side view.
- - video1 : aerial view + dynamic movements =======수정필요=======
- - video2 : side view + dynamic movements =======수정필요=======
- - video3 : aerial view + multiple boats =======수정필요=======
+The drone operator sets the position to move the drone and selects the mode based on either an aerial or side view
+ - video1 : aerial view + dynamic movements 
+ - video2 : aerial view + multiple boats
+ - video3 : oblique view 
 
-
-Depending on the location and shooting angle, there are significant boundary lines. If a boat crosses these significant boundaries or its direction of travel points towards the boundary, the color of its bounding box changes.
-- Green bbox: Normal state
-- Yellow bbox: Caution state
-- Red bbox: Danger state
-- Blue line: Predicted movement direction of the boat
+Depending on the position and angle of the drone set, the opponent and our territorial waters are separated by red lines
+- Green bbox(Normal State) :: Not over our territorial waters + Direction of progress not towards territorial waters
+- Yellow bbox(Approching) :: Direction of progress towards territorial waters
+- Red bbox(Crossed) :: Over our territorial waters
+- Blue line :: Predicted movement direction of the boat
 
 
 
@@ -149,8 +150,17 @@ pip install deep_sort_realtime
 3. Configuring Paths for the Model and Video
 
 4. Executing
+- video 1 ::
+   - Right of the red line: Our territorial waters
+   - Left of the red line: Foreign territorial waters
 
+- video 2 ::
+  - Right of the red line: Foreign territorial waters
+  - Left of the red line: Our territorial waters
 
+- video 3 :: 
+   - Above of the red line: Our territorial waters
+   - Below of the red line: Foreign territorial waters
 
 ## REFRENCES
 1. DATASETS
@@ -160,9 +170,9 @@ pip install deep_sort_realtime
 
   
 2. VIDEOS
-- video 1 :
-- video 2 : 
-- video 3 : 
+- video 1 : ==== 첨부필요 ====
+- video 2 : ==== 첨부필요 ====
+- video 3 : ==== 첨부필요 ====
 
 3. CODES
 - https://docs.ultralytics.com/
