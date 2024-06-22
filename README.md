@@ -1,5 +1,5 @@
 # IOT-YOLO-Project
-## :ocean::anchor::ocean::anchor:Team10 : Boat Detection & Prediction System:anchor::ocean::anchor::ocean:
+## :ocean::ocean::ocean::ocean:Team10 : Boat Detection & Prediction System:ocean::ocean::ocean::ocean:
 
 ### :file_folder::file_folder:Archive:file_folder::file_folder:
 
